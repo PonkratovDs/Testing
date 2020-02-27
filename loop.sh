@@ -36,4 +36,4 @@ then
 continue
 fi
 echo "Iteration number: $var1"
-done
+done > file.txt

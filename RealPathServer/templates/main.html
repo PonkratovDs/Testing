@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+</head>
+<body>
+<h2>Real path</h2>
+<form method="post" action="/get_real_path">
+    <input type="text" name="text">
+    <button type="submit">Get real path</button>
+</form>
+
+<h3>Path list</h3>
+{% for path in paths %}
+<div>{{ path }}&nbsp;</div>
+{% endfor %}
+
+</body>
+</html>
